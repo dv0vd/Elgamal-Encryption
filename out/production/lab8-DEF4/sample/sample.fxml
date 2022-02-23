@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="chooseFileLabel" layoutX="21.0" layoutY="14.0" text="Файл..." />
+      <Button layoutX="397.0" layoutY="9.0" mnemonicParsing="false" onAction="#chooseFile" text="Выбрать" />
+      <Label fx:id="chooseDirectoryLabel" layoutX="21.0" layoutY="56.0" text="Каталог сохранения..." />
+      <Button layoutX="397.0" layoutY="51.0" mnemonicParsing="false" onAction="#chooseDirectory" text="Выбрать" />
+      <Button fx:id="chooseKeysFileButton" disable="true" layoutX="397.0" layoutY="90.0" mnemonicParsing="false" onAction="#chooseKeysFile" text="Выбрать" />
+      <Label fx:id="chooseKeysFileLabel" disable="true" layoutX="21.0" layoutY="95.0" text="Файл с ключами..." />
+      <RadioButton fx:id="encryptingRadioButton" layoutX="21.0" layoutY="135.0" mnemonicParsing="false" onAction="#chooseEncrypting" selected="true" text="Шифрование" />
+      <RadioButton fx:id="decryptingRadioButton" layoutX="21.0" layoutY="171.0" mnemonicParsing="false" onAction="#chooseDecrypting" text="Дешифрование" />
+      <Button layoutX="183.0" layoutY="135.0" mnemonicParsing="false" onAction="#letsgo" prefHeight="56.0" prefWidth="293.0" text="Погнали!" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
